@@ -1,19 +1,22 @@
 <template>
+    <router-view/>
     <table>
         <tr v-for="champion in championCollection" :key="champion.key">
-            <td v-if="champion.id >=0"> 
-              <img :src="urlIcon(champion.key)">
-              <router-link to="{ path: 'champion', params: { champId: {{ champion.key }} } }"> <h2> {{ champion.name }} </h2> </router-link>
-            </td>
+            <router-link :to="{ name: 'champion', params: { championId: champion.key } }">
+                <td v-if="champion.id >=0"> 
+                    <img :src="urlIcon(champion.key)">
+                </td>
+                <td v-if="champion.id >=0">
+                    <h2> {{ champion.name }} </h2>
+                </td>
+            </router-link>
         </tr>
     </table>
 </template>
 
 <script>
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref, createApp } from 'vue'
 import axios from 'axios'
-import VueRouter from 'vue-router'
-
 
 
 export default defineComponent({
@@ -38,14 +41,14 @@ export default defineComponent({
     championCollection() {
       return this.champions;
     },
-    iconCollection() {
-      return this.icons;
-    }
   },
   methods:{ 
     urlIcon (id) {
-      return "https://cdn.communitydragon.org/latest/champion/" + id + "/square"
-    }
+      return "https://cdn.communitydragon.org/latest/champion/" + id + "/square";
+    },
+    goToChampion (id) {
+      this.$router.push({ path: '/Champion', params: { championId: id } });
+    },
   }
 })
 </script>

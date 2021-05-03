@@ -6,7 +6,7 @@
 
 <script lang="ts">
 
-import { defineComponent } from 'vue'
+import { defineComponent, createApp } from 'vue'
 import ListeChampions from './components/ListeChampions.vue'
 
 export default defineComponent({
