@@ -1,17 +1,25 @@
 <template>
-    <router-view/>
     <table>
         <tr v-for="champion in championCollection" :key="champion.key">
-            <router-link :to="{ name: 'champion', params: { championId: champion.key } }">
-                <td v-if="champion.id >=0"> 
+            <td v-if="champion.id >=0"> 
+                <router-link :to="{ name: 'champion', params: { championId: champion.id } }">
                     <img :src="urlIcon(champion.key)">
-                </td>
-                <td v-if="champion.id >=0">
+                </router-link>
+            </td>
+            <td v-if="champion.id >=0">
+                <router-link :to="{ name: 'champion', params: { championId: champion.id } }">
                     <h2> {{ champion.name }} </h2>
-                </td>
-            </router-link>
+                </router-link>
+            </td>
+            <td>
+                <!--<ul>
+                    <li v-for="role in champion.roles" :key="role" > {{ champion.role }} </li>
+                </ul>-->
+                <p> {{ champion.roles[0] }} </p>
+            </td>
         </tr>
     </table>
+    <router-view/>
 </template>
 
 <script>
@@ -45,9 +53,6 @@ export default defineComponent({
   methods:{ 
     urlIcon (id) {
       return "https://cdn.communitydragon.org/latest/champion/" + id + "/square";
-    },
-    goToChampion (id) {
-      this.$router.push({ path: '/Champion', params: { championId: id } });
     },
   }
 })

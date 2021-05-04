@@ -2,17 +2,20 @@
   <div>
     <liste-champions/>
   </div>
+  <router-view/>
 </template>
 
 <script lang="ts">
 
 import { defineComponent, createApp } from 'vue'
 import ListeChampions from './components/ListeChampions.vue'
+import Champion from './components/Champion.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    ListeChampions
+    ListeChampions,
+    Champion,
   }
 })
 </script>

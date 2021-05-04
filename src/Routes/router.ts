@@ -1,5 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router/dist/vue-router';
-//import Vue from 'vue'
+import { createRouter, createWebHashHistory } from 'vue-router';
 import ListeChampions from '../components/ListeChampions.vue';
 import Champion from '../components/Champion.vue';
 
@@ -12,7 +11,7 @@ const routes = [
         component: ListeChampions,
     },
     {
-        path: '/Champion/:championId',
+        path: '/champion/:championId',
         name: 'champion',
         component: Champion,
     }

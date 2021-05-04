@@ -1,5 +1,7 @@
 <template>
-    <p>{{ this.$routes.params.championId }}</p>
+    <div>
+        <p> Coucou </p>
+    </div>
 </template>
 
 <script>
