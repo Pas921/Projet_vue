@@ -44,3 +44,10 @@ Je me suis mal organisé et j'ai été submergé à la fin, c'est entièremet ma
 Pourquoi les routes ne permettent pas de changer de page?
 A quoi sert le store en concretement ?
 pourquoi ne peut on pas utiliser axios de manière dynamique, l'API de LOL met ses variables n'importes où, et à decidé de faire 36 documents différents. Or lorsque j'ai fait des fonctions pour avoir un url dynamique, axios.get() ne l'accepte pas.
+
+### Pour la notation
+Je pense avoir réussi a utiliser l'API, et à formater les données. 
+Mon router m'a l'air d'être correct.
+Je pense avoir maitrisé les bases du Vue.
+Je n'ai pas fait de CSS du tout.
+J'ai récupéré le store sans le modifier.

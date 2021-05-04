@@ -1,7 +1,7 @@
 import { createStore } from 'vuex';
 
 // store du cours
-// je ne comprends pas à quoiça sert
+// je ne comprends pas à quoi ça sert
 
 const store = createStore({
   state() {
