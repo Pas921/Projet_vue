@@ -25,3 +25,22 @@ Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 3. Open `src/main.ts` in VSCode
 4. Open the VSCode command palette
 5. Search and run "Select TypeScript version" -> "Use workspace version"
+
+
+
+# Mon projet
+
+J'ai choisi de travailler sur l'API de League of Legends car je connais bien le jeu et que je pense pouvoir assembler des données interressantes.
+J'ai pour objectif d'afficher l'ensemble des champions avec quelques informations.
+Lorsque l'on clique sur un champion on arrive sur une fenetre de description plus précise.
+Sur la liste des champions, avoir une barre de recherche pour ne pas avoir a traverser tous les champions.
+
+### La source de mon retard
+J'ai du mal à me servir de choses que je ne comprends pas, or j'ai eu du mal a comprendre comment fonctionnent les routes.
+Je n'ai pas du être très attentif pendant le cours sur le store car je ne sais pas ce qu'il est sensé faire. Sur internet j'ai à peu près compris comment m'en servir, mais je ne vois pas pourquoi je m'en servirai.
+Je me suis mal organisé et j'ai été submergé à la fin, c'est entièremet ma faute.
+
+### Mes questions sans réponses
+Pourquoi les routes ne permettent pas de changer de page?
+A quoi sert le store en concretement ?
+pourquoi ne peut on pas utiliser axios de manière dynamique, l'API de LOL met ses variables n'importes où, et à decidé de faire 36 documents différents. Or lorsque j'ai fait des fonctions pour avoir un url dynamique, axios.get() ne l'accepte pas.
